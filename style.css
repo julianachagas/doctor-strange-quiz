@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --primary-color: #262d3a;
+  --secondary-color: #ed0206;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 8rem 3rem;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.headline {
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.headline-highlight {
+  font-family: 'Cinzel Decorative', cursive;
+  display: block;
+  color: var(--secondary-color);
+  letter-spacing: 0.07rem;
+}
+
+.subheadline {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.container {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding: 8rem 3rem;
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 8rem;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  display: none;
+}
+
+#score {
+  font-size: 4rem;
+}
+
+.result-message {
+  font-size: 1.8rem;
+}
+
+.radio-group {
+  border: none;  
+  padding: 2rem;
+}
+
+.radio-group + .radio-group {
+  margin-top: 4.2rem;
+}
+
+.radio-group legend {
+  margin-bottom: 2.4rem;
+  line-height: 1.5; 
+}
+
+.radio-control + .radio-control {
+  margin-top: 1.6rem;
+}
+
+.radio-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.radio-control input {
+  accent-color: var(--secondary-color);
+}
+
+.btn {
+  width: 20%;
+  padding: 1.5rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin: 5rem auto 0;
+  display: block;
+  font-weight: 500;  
+}
+
+.btn:hover {
+  transform: translateY(3px);
+  background-color: #fff;
+  color: var(--secondary-color);
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 1.6rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  header, .container {
+    padding-block: 5rem
+  }
+
+  .headline {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+  } 
+
+  .result {
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    width: 100%;    
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+    padding-inline: 1rem;
+  }
+
+  .headline {
+    font-size: 2.4rem;
+  }
+}
